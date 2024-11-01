@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent Banner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Добро пожаловать на наш сайт</h1>
+        <p>Контент доступен после принятия условий использования cookies.</p>
+    </div>
+
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <h2>О файлах cookies на этом сайте</h2>
+            <p>Мы используем cookies для улучшения взаимодействия с пользователем и анализа производительности сайта. Некоторые cookies необходимы для работы сайта, другие помогают нам анализировать трафик. <a href="#" class="cookie-policy-link" onclick="openSettings()">Настроить</a></p>
+            <div class="cookie-buttons">
+                <button class="cookie-button accept-button" onclick="acceptCookies()">Принять все cookies</button>
+                <button class="cookie-button decline-button" onclick="declineCookies()">Отклонить все</button>
+                <button class="cookie-button customize-button" onclick="openSettings()">Настроить cookies</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookie-settings-modal" id="cookieSettingsModal">
+        <div class="modal-content">
+            <h2>Настройки Cookies</h2>
+            <p>Выберите категории cookies, которые хотите разрешить.</p>
+            <div class="cookie-categories">
+                <label>
+                    <input type="checkbox" checked disabled> Необходимые cookies
+                </label>
+                <label>
+                    <input type="checkbox" id="analyticsCookies"> Аналитические cookies
+                </label>
+                <label>
+                    <input type="checkbox" id="marketingCookies"> Маркетинговые cookies
+                </label>
+                <label>
+                    <input type="checkbox" id="functionalCookies"> Функциональные cookies
+                </label>
+            </div>
+            <h3>Декларация Cookies</h3>
+            <p>С помощью cookies мы можем лучше понимать, как посетители используют наш сайт.</p>
+            <div class="modal-buttons">
+                <button class="cookie-button accept-button" onclick="saveSettings()">Принять выбранные</button>
+                <button class="cookie-button decline-button" onclick="closeSettings()">Отменить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "QRL HomePage",
+    "version": "1.0",
+    "description": "Заменяет домашнюю страницу на QRL.GE",
+    "chrome_url_overrides": {
+      "newtab": "homepage.html"
+    },
+    "permissions": [
+      "tabs"
+    ],
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+  
